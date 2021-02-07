@@ -1,19 +1,6 @@
-/* css variables */
-:root {
-  --color-text-primary: #1a1b1d;
-  --color-text-secondary: #9194a5;
-  --color-text-on-primary: #ffffff;
-  --color-primary: #4460f7;
-  --color-border: #e0e2ea;
-}
-
 /* rest of styles */
 body {
   display: flex;
-  margin: 0; /* reset all margins (browsers are adding additional margins by default) */
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  color: var(--color-text-primary);
 }
 
 .login-image {
