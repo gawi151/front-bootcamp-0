@@ -1,0 +1,114 @@
+body {
+  background-color: var(--color-background);
+  margin: 0;
+}
+
+.products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 144px;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+.products-header__logo {
+  display: inline-block;
+}
+
+.products-search {
+  position: relative;
+}
+
+.products-search__input {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 48px;
+  padding: 16px 32px 16px 16px;
+  margin: 0;
+  width: 100%;
+}
+
+.products-search__icon {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  height: 18px;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  align-items: center;
+  padding-left: 32px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkbox__checkmark:after {
+  display: block;
+}
+
+.checkbox .checkbox__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox__input--checked {
+  border-radius: 4px;
+  background-color: var(--color-primary);
+}
+
+.checkbox input:hover ~ .checkbox__checkmark {
+  background-color: var(--color-background);
+}
+
+.checkbox input:checked ~ .checkbox__checkmark {
+  border-radius: 4px;
+  background-color: var(--color-primary);
+}
+
+.checkbox__label {
+  padding-left: 8px;
+  font-size: 14px;
+  line-height: 16px;
+}
