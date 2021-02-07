@@ -1,0 +1,96 @@
+/* css variables */
+:root {
+  --color-text-primary: #1a1b1d;
+  --color-text-secondary: #9194a5;
+  --color-text-on-primary: #ffffff;
+  --color-primary: #4460f7;
+  --color-border: #e0e2ea;
+}
+
+/* rest of styles */
+body {
+  display: flex;
+  margin: 0; /* reset all margins (browsers are adding additional margins by default) */
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.login-image {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .login-image {
+    display: none;
+  }
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15% 0 8%;
+}
+
+.login-header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.login-header__logo {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 25% 0 0 0;
+  transform: translateY(-25%);
+}
+
+.login-form__header {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.login-form__input {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.login-form__input::placeholder {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.login-form__label {
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 8px;
+  padding-top: 22px;
+}
+
+.login-form__btn {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-on-primary);
+  margin-top: 56px;
+  border-radius: 4px;
+  height: 48px;
+  background: var(--color-primary);
+  border: none;
+}
+
+.login-form__forgot-password {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 16px;
+}
